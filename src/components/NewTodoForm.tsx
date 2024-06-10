@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 function NewTodoForm(props) {
@@ -32,7 +33,7 @@ function NewTodoForm(props) {
                 </div>
                 <div className="mb-3">
                     <label className="form-label">Description</label>
-                    <textarea row={3} className="form-control" required onChange={descriptionChange} value={description}></textarea>
+                    <textarea rows={3} className="form-control" required onChange={descriptionChange} value={description}></textarea>
                 </div>
                     <button type="button" className="btn btn-primary mt-3" onClick={submitTodo}>Add Todo</button>
             </form>
